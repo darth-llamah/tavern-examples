@@ -1,0 +1,22 @@
+---
+test_name: fixture usage
+marks:
+  - usefixtures:
+      - get_random_int
+stages:
+  - name: double with fixture and external function
+    request:
+      url: "{api_host}/double"
+      method: POST
+      headers:
+        content-type: application/json
+      json:
+        number: &the_number !int "{get_random_int}"
+    response:
+      status_code: 200
+      body:
+        double: !anything
+        $ext:
+          function: conftest:check_double
+          extra_args:
+            - *the_number

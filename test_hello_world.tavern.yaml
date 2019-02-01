@@ -1,0 +1,21 @@
+---
+test_name: hello world
+stages:
+  - name: hello world GET
+    request:
+      url: "{api_host}/hello-world"
+      method: GET
+    response:
+      status_code: 200
+      body:
+        response: "Hello World!"
+  - name: hello world GET with params
+    request:
+      url: "{api_host}/hello-world"
+      method: GET
+      params:
+        upper: !bool "True"
+    response:
+      status_code: 200
+      body:
+        response: "HELLO WORLD!"

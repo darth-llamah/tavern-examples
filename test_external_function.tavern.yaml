@@ -1,0 +1,14 @@
+---
+test_name: external function
+stages:
+  - name: hello world GET with wrong parameter
+    request:
+      url: "{api_host}/hello-world"
+      method: GET
+      params:
+        wrong-param-name: !bool "true"
+    response:
+      status_code: 400
+      body:
+        $ext:
+          function: conftest:check_error_response
