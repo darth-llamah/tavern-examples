@@ -1,0 +1,154 @@
+{
+	"info": {
+		"_postman_id": "a4513e63-415f-4cfb-9b7c-ed71cc000204",
+		"name": "tavern demo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "hello-world GET",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://llamah.dynu.net/super-api/hello-world",
+					"protocol": "https",
+					"host": [
+						"llamah",
+						"dynu",
+						"net"
+					],
+					"path": [
+						"super-api",
+						"hello-world"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "hello-world GET with params",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://llamah.dynu.net/super-api/hello-world?upper=True",
+					"protocol": "https",
+					"host": [
+						"llamah",
+						"dynu",
+						"net"
+					],
+					"path": [
+						"super-api",
+						"hello-world"
+					],
+					"query": [
+						{
+							"key": "upper",
+							"value": "True"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-secret GET",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://llamah.dynu.net/super-api/get-secret",
+					"protocol": "https",
+					"host": [
+						"llamah",
+						"dynu",
+						"net"
+					],
+					"path": [
+						"super-api",
+						"get-secret"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "check-secret POST",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"secret\": 533\n}"
+				},
+				"url": {
+					"raw": "https://llamah.dynu.net/super-api/check-secret",
+					"protocol": "https",
+					"host": [
+						"llamah",
+						"dynu",
+						"net"
+					],
+					"path": [
+						"super-api",
+						"check-secret"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "doiuble POST",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"number\": 4\n}"
+				},
+				"url": {
+					"raw": "https://llamah.dynu.net/super-api/double",
+					"protocol": "https",
+					"host": [
+						"llamah",
+						"dynu",
+						"net"
+					],
+					"path": [
+						"super-api",
+						"double"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

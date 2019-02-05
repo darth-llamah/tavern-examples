@@ -15,12 +15,12 @@ def hello_world():
 	if request.args:
 		print(request.args)
 		try:
-			upper_case = request.args["upper"]
+			upper_case = request.args["upper"].lower()
 		except KeyError:
 			return "wrong parameter", 400
-		if upper_case == "True":
+		if upper_case == "true":
 			return_string = "HELLO WORLD!"
-		elif upper_case == "False":
+		elif upper_case == "false":
 			return_string = "hello world!"
 		else:
 			return jsonify({"error": "True or False only"}), 400
