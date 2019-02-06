@@ -119,7 +119,7 @@
 			"response": []
 		},
 		{
-			"name": "doiuble POST",
+			"name": "double POST",
 			"request": {
 				"method": "POST",
 				"header": [
