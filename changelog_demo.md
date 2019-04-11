@@ -21,3 +21,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [2018-01-01] - 2018-10-10
 Internal changes just because
 
+[Unreleased]: https://github.com/SMaciej/release-automation-sandbox/compare/master...HEAD
+[release/425]: https://github.com/SMaciej/release-automation-sandbox/compare/release/424...release/425
+[release/424]: https://github.com/SMaciej/release-automation-sandbox/compare/release/423...release/424
+[release/423]: SMaciej/release-automation-sandbox/compare/release/422...release/423
