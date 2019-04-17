@@ -4,6 +4,8 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
+
+## [release/420] - 2019-04-17
 ### Changed
 - [omg] removed unnecessary file
 
@@ -26,6 +28,7 @@ No changes.
 
 
 [Unreleased]: https://github.com/darth-llamah/tavern-examples/compare/master...HEAD
+[release/420]: https://github.com/darth-llamah/tavern-examples/compare/release/419...release/420
 [release/419]: https://github.com/darth-llamah/tavern-examples/compare/release/418...release/419
 [release/425]: https://github.com/SMaciej/release-automation-sandbox/compare/release/424...release/425
 [release/424]: https://github.com/SMaciej/release-automation-sandbox/compare/release/423...release/424
