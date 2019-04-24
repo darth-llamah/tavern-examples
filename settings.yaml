@@ -3,5 +3,4 @@ name: common test settings
 description: tavern test settings- url, variables etc. ONLY for common items
 
 variables:
-  not_important: nope
   api_host: http://localhost:5000

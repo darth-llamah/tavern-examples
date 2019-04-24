@@ -5,6 +5,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+## [release/422] - 2019-04-24
+No changes.
+
 ## [release/421] - 2019-04-24
 ### Added
 - nothing
@@ -32,6 +35,7 @@ No changes.
 
 
 [Unreleased]: https://github.com/darth-llamah/tavern-examples/compare/master...HEAD
+[release/422]: https://github.com/darth-llamah/tavern-examples/compare/release/421...release/422
 [release/421]: https://github.com/darth-llamah/tavern-examples/compare/release/420...release/421
 [release/420]: https://github.com/darth-llamah/tavern-examples/compare/release/419...release/420
 [release/419]: https://github.com/darth-llamah/tavern-examples/compare/release/418...release/419
