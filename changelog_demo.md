@@ -6,7 +6,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ## [release/421] - 2019-04-24
-No changes.
+### Added
+- nothing
 
 ## [release/420] - 2019-04-17
 ### Changed
