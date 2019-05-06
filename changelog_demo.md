@@ -4,11 +4,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
-- [omg] some change
-- [wtf] another change
+
+## [release/430] - 2019-05-06
+### Added
+- Internal improvements for development process.
 
 ## [release/425] - 2019-05-06
-No changes
+No changes.
 
 ## [release/422] - 2019-04-24
 No changes.
@@ -40,6 +42,7 @@ No changes.
 
 
 [Unreleased]: https://github.com/darth-llamah/tavern-examples/compare/master...HEAD
+[release/430]: https://github.com/darth-llamah/tavern-examples/compare/release/425...release/430
 [release/425]: https://github.com/darth-llamah/tavern-examples/compare/release/421...release/425
 [release/422]: https://github.com/darth-llamah/tavern-examples/compare/release/421...release/422
 [release/421]: https://github.com/darth-llamah/tavern-examples/compare/release/420...release/421
