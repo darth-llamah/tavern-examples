@@ -5,6 +5,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+## [release/440] - 2019-05-06
+### Added
+- [omg] znowu
+- [wtf] znowu
+
 ## [release/435] - 2019-05-06
 ### Added
 - Internal improvements for development process.
@@ -46,6 +51,7 @@ No changes.
 
 
 [Unreleased]: https://github.com/darth-llamah/tavern-examples/compare/master...HEAD
+[release/440]: https://github.com/darth-llamah/tavern-examples/compare/release/435...release/440
 [release/435]: https://github.com/darth-llamah/tavern-examples/compare/release/430...release/435
 [release/430]: https://github.com/darth-llamah/tavern-examples/compare/release/425...release/430
 [release/425]: https://github.com/darth-llamah/tavern-examples/compare/release/421...release/425
