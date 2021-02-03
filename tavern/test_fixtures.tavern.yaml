@@ -14,9 +14,9 @@ stages:
         number: &the_number !int "{get_random_int}"
     response:
       status_code: 200
-      body:
+      json:
         double: !anything
-        $ext:
+      verify_response_with:
           function: conftest:check_double
           extra_args:
             - *the_number

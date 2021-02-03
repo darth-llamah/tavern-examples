@@ -8,10 +8,10 @@ stages:
       method: GET
     response:
       status_code: 200
-      body:
+      json:
         number: !anything
       save:
-        body:
+        json:
           this_secret: number
   - &check_secret
     name: check-secret with saved data
@@ -24,7 +24,7 @@ stages:
         secret: !int "{this_secret}"
     response:
       status_code: 200
-      body:
+      json:
         check: OK
   - name: check-secret will fail now
     request:
@@ -36,7 +36,7 @@ stages:
         secret: !int "{this_secret}"
     response:
       status_code: 400
-      body:
+      json:
         check: FAILED
   - *get_secret
   - *check_secret

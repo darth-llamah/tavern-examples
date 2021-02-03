@@ -9,6 +9,5 @@ stages:
         wrong-param-name: !bool "true"
     response:
       status_code: 400
-      body:
-        $ext:
-          function: conftest:check_error_response
+      verify_response_with:
+        function: conftest:check_error_response

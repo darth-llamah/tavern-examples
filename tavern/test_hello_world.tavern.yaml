@@ -7,7 +7,7 @@ stages:
       method: GET
     response:
       status_code: 200
-      body:
+      json:
         response: "Hello World!"
   - name: hello world GET with params
     request:
@@ -17,5 +17,5 @@ stages:
         upper: !bool "True"
     response:
       status_code: 200
-      body:
+      json:
         response: "HELLO WORLD!"
