@@ -1,0 +1,25 @@
+---
+name: imports
+description: common things to be used later
+
+variables:
+  get_random_int: !int 555
+
+stages:
+  - id: check_double_reference_step
+    name: double with fixture and external function
+    request:
+      url: "{api_host}/double"
+      method: POST
+      headers:
+        content-type: application/json
+      json:
+        number: &the_number !int "{get_random_int}"
+    response:
+      status_code: 200
+      json:
+        double: !anything
+      verify_response_with:
+          function: conftest:check_double
+          extra_args:
+            - *the_number

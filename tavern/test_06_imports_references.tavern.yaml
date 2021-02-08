@@ -1,0 +1,8 @@
+---
+test_name: importing and references
+includes:
+  - !include imports.yaml
+
+stages:
+  - type: ref
+    id: check_double_reference_step

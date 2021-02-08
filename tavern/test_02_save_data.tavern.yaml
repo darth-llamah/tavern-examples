@@ -1,0 +1,38 @@
+---
+test_name: get-secret and check-secret
+stages:
+  - name: get-secret
+    request:
+      url: "{api_host}/get-secret"
+      method: GET
+    response:
+      status_code: 200
+      json:
+        number: !anything
+      save:
+        json:
+          this_secret: number
+  - name: check-secret with saved data
+    request:
+      url: "{api_host}/check-secret"
+      method: POST
+      headers:
+        content-type: application/json
+      json:
+        secret: !int "{this_secret}"
+    response:
+      status_code: 200
+      json:
+        check: OK
+  - name: check-secret will fail now
+    request:
+      url: "{api_host}/check-secret"
+      method: POST
+      headers:
+        content-type: application/json
+      json:
+        secret: !int "{this_secret}"
+    response:
+      status_code: 400
+      json:
+        check: FAILED

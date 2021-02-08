@@ -1,3 +1,4 @@
+
 start:
 	docker-compose up -d
 
@@ -15,4 +16,4 @@ serve:
 
 TEST_PATH=tavern/
 test:
-	docker-compose exec app pytest  $(TEST_PATH)
+	docker-compose exec app pytest $(TEST_PATH)
